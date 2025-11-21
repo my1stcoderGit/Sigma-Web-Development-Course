@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning</title>
+</head>
+
+<body>
+
+    <!--         Methods of using CSS
+     We can use CSS in html using style tag this method is known as internal css while the second method is external css which is an external file which we link with html by using link tag in head.
+     
+    Also we can use style attribute to style a particular tag or element this method is known as inline css but this is not a good paractice.-->
+
+    <div>
+        <h1>CSS Learning</h1>
+    </div>
+
+    <style>
+        div {
+            color: brown;
+            background-color: antiquewhite;
+        }
+
+        #span1>p {
+            color: aqua;
+        }
+
+        #span2 h1 {
+            color: blueviolet;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selectors */
+        a:visited{color: yellow;}
+        a:link{color: green;}
+        a:active{background-color: rgb(255, 85, 0);}
+        a:hover{background-color: blueviolet;}
+        p:first-child{
+            background-color: aqua;
+        }
+        
+    </style>
+    
+    <!-- Also  we can use comma to add use same declarations with multiple selectors this is known as group selector-->
+
+    <p style="color: blue; background-color: aqua;"> My name is harry</p>
+
+    <!-- ====================================================================================================== -->
+
+    <!-- TYPES OF SELECTORS IN CSS
+ 1. Tag selector 2. Class selector (which is represented by .) 3. ID Selector (which is represented by #) 4. Child Selector(used to style direct nested tags) 5. Descendent selector (used to style any child ) 6. Univerrsal Selector(which styles all the elements present in the code and represented by *) 7. Pseudo Selectors( which selects and styles the urls etc)-->
+
+
+    <span id="span1">
+        <p>
+            Its child selector demo.
+        </p>
+    </span>
+    <span id="span2">
+        <p>
+        <h1>Descendent selector</h1>
+        </p>
+    </span>
+
+    <a href="https://facebook.com">Facebook</a>
+
+<main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+</body>
+
+</html>
