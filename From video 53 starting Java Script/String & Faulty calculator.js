@@ -1,6 +1,9 @@
 {
    //                                  String learning
 
+//First of all strings are immutable in javascript means once we create a string we cannot change it. We can only create a new string from the existing string by applying various methods on it.
+
+
 // here thats how we can call the characters of string by their index number starting from o to n-1 where n is the length of string.
 
 console.log("This is strings tutorial")
